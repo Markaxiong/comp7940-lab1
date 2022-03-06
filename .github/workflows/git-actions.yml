@@ -9,7 +9,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - name: Check out master
         uses: actions/checkout@main
 
