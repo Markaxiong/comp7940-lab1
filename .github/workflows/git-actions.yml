@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out master
-        uses: actions/checkout@main
+        uses: actions/checkout@comp7940-lab1
 
       - name: Security vulnerabilities scan
-        uses: aufdenpunkt/python-safety-check
+        uses: aufdenpunkt/python-safety-check@comp7940-lab1
