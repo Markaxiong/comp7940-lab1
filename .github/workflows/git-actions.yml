@@ -7,11 +7,9 @@ env:
   DEP_PATH: src/requirements.txt
 
 jobs:
-  build1:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out main
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
-      - name: Security vulnerabilities scan
-        uses: aufdenpunkt/python-safety-check@v3
+      - uses: aufdenpunkt/python-safety-check@v2
